@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5B593F232124CA2C00D8E353 /* Geohash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B593F1A2124CA2C00D8E353 /* Geohash.framework */; };
-		5B593F2A2124CA2C00D8E353 /* Geohash.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B593F1C2124CA2C00D8E353 /* Geohash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B593F2A2124CA2C00D8E353 /* Geohash.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B593F1C2124CA2C00D8E353 /* Geohash.h */; };
 		5B593F352124CB2800D8E353 /* BoundingBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* BoundingBoxTests.swift */; };
 		5B593F362124CB2800D8E353 /* GeohashBitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* GeohashBitsTests.swift */; };
 		5B593F372124CB2800D8E353 /* GeohashIteratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* GeohashIteratorTests.swift */; };
@@ -104,7 +104,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				5B593EF82124C9D800D8E353 /* Resources */,
@@ -113,7 +113,6 @@
 				OBJ_20 /* Products */,
 				OBJ_6 /* Package.swift */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -213,7 +212,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_20 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
