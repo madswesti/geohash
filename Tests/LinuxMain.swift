@@ -3,7 +3,7 @@ import XCTest
 
 XCTMain([
   testCase(BoundingBoxTests.allTests),
-  testCase(GeohashBitsTests.allTests),
+  testCase(GeohashTests.allTests),
   testCase(GeohashIteratorTests.allTests),
   testCase(LocationTests.allTests)
 ])
