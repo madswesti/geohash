@@ -27,6 +27,16 @@ class GeohashIteratorTests: XCTestCase {
         XCTAssertEqual(subject.next()?.hash(), "u10hfr34")
         XCTAssertNil(subject.next())
     }
+
+    func testIterateCharacterPercision() throws {
+        let min = SampleLocation(longitude: -111.04764916561925, latitude: 45.673109486297705)
+        let max = SampleLocation(longitude: -111.04239979740194, latitude: 45.681051369346676)
+        let bounds = try BoundingBox<SampleLocation>(min: min, max: max)
+        let iterator = try GeohashIterator(bounds: bounds, characterPrecision: 3)
+        iterator.forEach {
+            XCTAssertEqual($0.hash().count, 3)
+        }
+    }
 }
 
 extension GeohashIteratorTests {

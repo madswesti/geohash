@@ -9,6 +9,12 @@ public class GeohashIterator<L: Location>: IteratorProtocol, Sequence {
         self.latBaseline = try Geohash(location: bounds.min, bitPrecision: bitPrecision)
         self.current = self.latBaseline
     }
+
+    public init(bounds: BoundingBox<L>, characterPrecision: UInt8) throws {
+        self.bounds = bounds
+        self.latBaseline = try Geohash(location: bounds.min, characterPrecision: characterPrecision)
+        self.current = self.latBaseline
+    }
     
     public func next() -> Geohash<L>? {
         defer { advanceCurrent() }
