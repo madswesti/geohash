@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5B593F192124CA2C00D8E353"
+               BlueprintIdentifier = "5B668DE12126623B00C6DF02"
                BuildableName = "Geohash.framework"
                BlueprintName = "Geohash"
                ReferencedContainer = "container:Geohash.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5B593F212124CA2C00D8E353"
+               BlueprintIdentifier = "5B668DE92126623B00C6DF02"
                BuildableName = "GeohashTests.xctest"
                BlueprintName = "GeohashTests"
                ReferencedContainer = "container:Geohash.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5B593F192124CA2C00D8E353"
+            BlueprintIdentifier = "5B668DE12126623B00C6DF02"
             BuildableName = "Geohash.framework"
             BlueprintName = "Geohash"
             ReferencedContainer = "container:Geohash.xcodeproj">
@@ -64,7 +64,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5B593F192124CA2C00D8E353"
+            BlueprintIdentifier = "5B668DE12126623B00C6DF02"
             BuildableName = "Geohash.framework"
             BlueprintName = "Geohash"
             ReferencedContainer = "container:Geohash.xcodeproj">
@@ -82,7 +82,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5B593F192124CA2C00D8E353"
+            BlueprintIdentifier = "5B668DE12126623B00C6DF02"
             BuildableName = "Geohash.framework"
             BlueprintName = "Geohash"
             ReferencedContainer = "container:Geohash.xcodeproj">
