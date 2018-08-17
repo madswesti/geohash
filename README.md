@@ -73,7 +73,7 @@ iterator.forEach {
 ## Testing
 
 ### macOS
-Run `GeocodeTests` target via the `Geocode` scheme in `XCode`.
+Run `GeocodeTests` target via the `Geocode` scheme in `Xcode`.
 
 ### Linux
 Run the vagrant file and execute `swift test`
