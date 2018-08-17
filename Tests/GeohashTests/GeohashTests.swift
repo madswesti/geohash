@@ -1,23 +1,23 @@
 import XCTest
 @testable import Geohash
 
-class GeohashBitsTests: XCTestCase {
+class GeohashTests: XCTestCase {
     
     func testEvenStringEncoding() throws {
-        let bits = try GeohashBits(location: Location(longitude: -0.1, latitude: 51.5), characterPrecision: 12)
+        let bits = try Geohash<SampleLocation>(location: SampleLocation(longitude: -0.1, latitude: 51.5), characterPrecision: 12)
         XCTAssertEqual(bits.hash(), "gcpuvxr1jzfd")
     }
     
     func testOddStringEncoding() throws {
-        let bits = try GeohashBits(location: Location(longitude: -0.1, latitude: 51.5), characterPrecision: 11)
+        let bits = try Geohash<SampleLocation>(location: SampleLocation(longitude: -0.1, latitude: 51.5), characterPrecision: 11)
         XCTAssertEqual(bits.hash(), "gcpuvxr1jzf")
     }
     
     func testEncodingTooLong() {
         do {
-        let _ = try GeohashBits(location: Location(longitude: -0.1, latitude: 51.5),
+        let _ = try Geohash<SampleLocation>(location: SampleLocation(longitude: -0.1, latitude: 51.5),
                                 characterPrecision: 13)
-        } catch GeohashBits.Error.invalidPrecision {
+        } catch Geohash<SampleLocation>.Error.invalidPrecision {
             return
         } catch {
             XCTFail("Caught incorrect error type")
@@ -26,9 +26,9 @@ class GeohashBitsTests: XCTestCase {
     
     func testInvalidAngle() {
         do {
-            let _ = try GeohashBits(location: Location(longitude: -200, latitude: 51.5),
+            let _ = try Geohash<SampleLocation>(location: SampleLocation(longitude: -200, latitude: 51.5),
                             characterPrecision: 11)
-        } catch GeohashBits.Error.invalidLocation {
+        } catch Geohash<SampleLocation>.Error.invalidLocation {
             return
         } catch {
             XCTFail("Caught incorrect error type")
@@ -36,19 +36,19 @@ class GeohashBitsTests: XCTestCase {
     }
     
     func testEvenStringDecoding() throws {
-        let bits = try GeohashBits(hash: "u10hfr2c4pv6")
+        let bits = try Geohash<SampleLocation>(hash: "u10hfr2c4pv6")
         XCTAssertEqual(bits.boundingBox().center().longitude, 0.0999999605119228, accuracy: 1.0e-13)
         XCTAssertEqual(bits.boundingBox().center().latitude, 51.500000031665, accuracy: 1.0e-13)
     }
     
     func testOddStringDecoding() throws {
-        let bits = try GeohashBits(hash: "u10hfr2c4pv")
+        let bits = try Geohash<SampleLocation>(hash: "u10hfr2c4pv")
         XCTAssertEqual(bits.boundingBox().center().longitude, 0.100000128149986, accuracy: 1.0e-13)
         XCTAssertEqual(bits.boundingBox().center().latitude, 51.5000002831221, accuracy: 1.0e-13)
     }
     
     func testEvenStringNeighbors() throws {
-        let bits = try GeohashBits(hash: "u10hfr2c4pv6")
+        let bits = try Geohash<SampleLocation>(hash: "u10hfr2c4pv6")
         XCTAssertEqual(bits.neighbor(.north).hash(), "u10hfr2c4pv7")
         XCTAssertEqual(bits.neighbor(.south).hash(), "u10hfr2c4pv3")
         XCTAssertEqual(bits.neighbor(.east ).hash(), "u10hfr2c4pvd")
@@ -56,7 +56,7 @@ class GeohashBitsTests: XCTestCase {
     }
     
     func testOddStringNeighbors() throws {
-        let bits = try GeohashBits(hash: "u10hfr2c4pv")
+        let bits = try Geohash<SampleLocation>(hash: "u10hfr2c4pv")
         XCTAssertEqual(bits.neighbor(.north).hash(), "u10hfr2c60j")
         XCTAssertEqual(bits.neighbor(.south).hash(), "u10hfr2c4pt")
         XCTAssertEqual(bits.neighbor(.east ).hash(), "u10hfr2c4py")
@@ -65,7 +65,7 @@ class GeohashBitsTests: XCTestCase {
     
     func testEvenBinaryEncoding() throws {
         // match redis precision for comparison
-        let bits = try GeohashBits(location: Location(longitude: -0.1, latitude: 51.5), bitPrecision: 26)
+        let bits = try Geohash<SampleLocation>(location: SampleLocation(longitude: -0.1, latitude: 51.5), bitPrecision: 26)
         // note redis always returns 11 character hashes "gcpuvxr1jz0",
         // but we would need 55 bits for 11 characters and we only have 52 so we truncate at 10 characters
         XCTAssertEqual(bits.hash(), "gcpuvxr1jz")
@@ -74,14 +74,14 @@ class GeohashBitsTests: XCTestCase {
     }
     
     func testOddBinaryEncoding() throws {
-        let bits = try GeohashBits(location: Location(longitude: -0.1, latitude: 51.5), bitPrecision: 25)
+        let bits = try Geohash<SampleLocation>(location: SampleLocation(longitude: -0.1, latitude: 51.5), bitPrecision: 25)
         XCTAssertEqual(bits.hash(), "gcpuvxr1jz")
         XCTAssertEqual(bits.boundingBox().center().longitude, -0.0999981164932251, accuracy: 1.0e-13)
         XCTAssertEqual(bits.boundingBox().center().latitude, 51.4999982714653, accuracy: 1.0e-13)
     }
 }
 
-extension GeohashBitsTests {
+extension GeohashTests {
     static var allTests = [
         ("testEvenStringEncoding", testEvenStringEncoding),
         ("testOddStringEncoding", testOddStringEncoding),

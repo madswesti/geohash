@@ -4,15 +4,15 @@ import XCTest
 
 class GeohashIteratorTests: XCTestCase {
     
-    var bounds: BoundingBox!
+    var bounds: BoundingBox<SampleLocation>!
     
     override func setUp() {
         super.setUp()
 
         do {
-            self.bounds = try BoundingBox(
-                min: Location(longitude: 0.09991, latitude: 51.49996),
-                max: Location(longitude: 0.10059, latitude: 51.50028))
+            self.bounds = try BoundingBox<SampleLocation>(
+                min: SampleLocation(longitude: 0.09991, latitude: 51.49996),
+                max: SampleLocation(longitude: 0.10059, latitude: 51.50028))
         } catch {
             XCTFail("Failed to setup test")
         }

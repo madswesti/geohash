@@ -1,16 +1,16 @@
-public class GeohashIterator: IteratorProtocol, Sequence {
+public class GeohashIterator<L: Location>: IteratorProtocol, Sequence {
     
-    let bounds: BoundingBox
-    var latBaseline: GeohashBits
-    var current: GeohashBits?
+    let bounds: BoundingBox<L>
+    var latBaseline: Geohash<L>
+    var current: Geohash<L>?
     
-    public init(bounds: BoundingBox, bitPrecision: UInt8) throws {
+    public init(bounds: BoundingBox<L>, bitPrecision: UInt8) throws {
         self.bounds = bounds
-        self.latBaseline = try GeohashBits(location: bounds.min, bitPrecision: bitPrecision)
+        self.latBaseline = try Geohash(location: bounds.min, bitPrecision: bitPrecision)
         self.current = self.latBaseline
     }
     
-    public func next() -> GeohashBits? {
+    public func next() -> Geohash<L>? {
         defer { advanceCurrent() }
         return current
     }
