@@ -1,4 +1,4 @@
-import Geohash
+import Geohasher
 
 struct SampleLocation: Location {
     let longitude: Double

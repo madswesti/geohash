@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B668DEB2126623C00C6DF02 /* Geohash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B668DE22126623B00C6DF02 /* Geohash.framework */; };
+		5B668DEB2126623C00C6DF02 /* Geohasher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B668DE22126623B00C6DF02 /* Geohasher.framework */; };
 		5B668DFD2126629900C6DF02 /* Geohash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B668DF92126629900C6DF02 /* Geohash.swift */; };
 		5B668DFE2126629900C6DF02 /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B668DFA2126629900C6DF02 /* BoundingBox.swift */; };
 		5B668DFF2126629900C6DF02 /* GeohashIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B668DFB2126629900C6DF02 /* GeohashIterator.swift */; };
@@ -32,17 +32,17 @@
 /* Begin PBXFileReference section */
 		5B593F312124CA9A00D8E353 /* tests_info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tests_info.plist; sourceTree = "<group>"; };
 		5B593F322124CA9A00D8E353 /* framework_info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = framework_info.plist; sourceTree = "<group>"; };
-		5B668DE22126623B00C6DF02 /* Geohash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Geohash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B668DEA2126623B00C6DF02 /* GeohashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeohashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B668DF92126629900C6DF02 /* Geohash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Geohash.swift; path = Sources/Geohash/Geohash.swift; sourceTree = "<group>"; };
-		5B668DFA2126629900C6DF02 /* BoundingBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoundingBox.swift; path = Sources/Geohash/BoundingBox.swift; sourceTree = "<group>"; };
-		5B668DFB2126629900C6DF02 /* GeohashIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeohashIterator.swift; path = Sources/Geohash/GeohashIterator.swift; sourceTree = "<group>"; };
-		5B668DFC2126629900C6DF02 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Sources/Geohash/Location.swift; sourceTree = "<group>"; };
-		5B668E02212662C500C6DF02 /* GeohashTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeohashTests.swift; path = Tests/GeohashTests/GeohashTests.swift; sourceTree = "<group>"; };
-		5B668E03212662C500C6DF02 /* GeohashIteratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeohashIteratorTests.swift; path = Tests/GeohashTests/GeohashIteratorTests.swift; sourceTree = "<group>"; };
-		5B668E04212662C500C6DF02 /* BoundingBoxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoundingBoxTests.swift; path = Tests/GeohashTests/BoundingBoxTests.swift; sourceTree = "<group>"; };
-		5B668E05212662C500C6DF02 /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationTests.swift; path = Tests/GeohashTests/LocationTests.swift; sourceTree = "<group>"; };
-		5B668E1E2127026F00C6DF02 /* SampleLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SampleLocation.swift; path = Tests/GeohashTests/SampleLocation.swift; sourceTree = "<group>"; };
+		5B668DE22126623B00C6DF02 /* Geohasher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Geohasher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B668DEA2126623B00C6DF02 /* GeohasherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeohasherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B668DF92126629900C6DF02 /* Geohash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Geohash.swift; path = Sources/Geohasher/Geohash.swift; sourceTree = "<group>"; };
+		5B668DFA2126629900C6DF02 /* BoundingBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoundingBox.swift; path = Sources/Geohasher/BoundingBox.swift; sourceTree = "<group>"; };
+		5B668DFB2126629900C6DF02 /* GeohashIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeohashIterator.swift; path = Sources/Geohasher/GeohashIterator.swift; sourceTree = "<group>"; };
+		5B668DFC2126629900C6DF02 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Sources/Geohasher/Location.swift; sourceTree = "<group>"; };
+		5B668E02212662C500C6DF02 /* GeohashTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeohashTests.swift; path = Tests/GeohasherTests/GeohashTests.swift; sourceTree = "<group>"; };
+		5B668E03212662C500C6DF02 /* GeohashIteratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeohashIteratorTests.swift; path = Tests/GeohasherTests/GeohashIteratorTests.swift; sourceTree = "<group>"; };
+		5B668E04212662C500C6DF02 /* BoundingBoxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoundingBoxTests.swift; path = Tests/GeohasherTests/BoundingBoxTests.swift; sourceTree = "<group>"; };
+		5B668E05212662C500C6DF02 /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationTests.swift; path = Tests/GeohasherTests/LocationTests.swift; sourceTree = "<group>"; };
+		5B668E1E2127026F00C6DF02 /* SampleLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SampleLocation.swift; path = Tests/GeohasherTests/SampleLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B668DEB2126623C00C6DF02 /* Geohash.framework in Frameworks */,
+				5B668DEB2126623C00C6DF02 /* Geohasher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,8 +88,8 @@
 		OBJ_20 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5B668DE22126623B00C6DF02 /* Geohash.framework */,
-				5B668DEA2126623B00C6DF02 /* GeohashTests.xctest */,
+				5B668DE22126623B00C6DF02 /* Geohasher.framework */,
+				5B668DEA2126623B00C6DF02 /* GeohasherTests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -143,7 +143,7 @@
 			);
 			name = Geohash;
 			productName = Geohash;
-			productReference = 5B668DE22126623B00C6DF02 /* Geohash.framework */;
+			productReference = 5B668DE22126623B00C6DF02 /* Geohasher.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5B668DE92126623B00C6DF02 /* GeohashTests */ = {
@@ -161,7 +161,7 @@
 			);
 			name = GeohashTests;
 			productName = GeohashTests;
-			productReference = 5B668DEA2126623B00C6DF02 /* GeohashTests.xctest */;
+			productReference = 5B668DEA2126623B00C6DF02 /* GeohasherTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -313,8 +313,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.onxmaps.Geohash;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_NAME = Geohasher;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -380,8 +380,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.onxmaps.Geohash;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_NAME = Geohasher;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -445,8 +445,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.onxmaps.GeohashTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_NAME = GeohasherTests;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -505,8 +505,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.onxmaps.GeohashTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_NAME = GeohasherTests;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
