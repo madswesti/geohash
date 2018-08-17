@@ -4,8 +4,7 @@ os:
 language: generic
 sudo: required
 dist: trusty
-osx_image: xcode8
+install:
+  - eval "$(curl -sL https://swiftenv.fuller.li/install.sh)"
 script:
-  - eval "$(curl -sL https://swift.vapor.sh/ci)"
-notifications:
-  email: false
+  - swift test
