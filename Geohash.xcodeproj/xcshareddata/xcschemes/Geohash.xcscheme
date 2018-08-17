@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5B668DE12126623B00C6DF02"
-               BuildableName = "Geohash.framework"
+               BuildableName = "Geohasher.framework"
                BlueprintName = "Geohash"
                ReferencedContainer = "container:Geohash.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5B668DE92126623B00C6DF02"
-               BuildableName = "GeohashTests.xctest"
+               BuildableName = "GeohasherTests.xctest"
                BlueprintName = "GeohashTests"
                ReferencedContainer = "container:Geohash.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5B668DE12126623B00C6DF02"
-            BuildableName = "Geohash.framework"
+            BuildableName = "Geohasher.framework"
             BlueprintName = "Geohash"
             ReferencedContainer = "container:Geohash.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5B668DE12126623B00C6DF02"
-            BuildableName = "Geohash.framework"
+            BuildableName = "Geohasher.framework"
             BlueprintName = "Geohash"
             ReferencedContainer = "container:Geohash.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5B668DE12126623B00C6DF02"
-            BuildableName = "Geohash.framework"
+            BuildableName = "Geohasher.framework"
             BlueprintName = "Geohash"
             ReferencedContainer = "container:Geohash.xcodeproj">
          </BuildableReference>
