@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5B668DEB2126623C00C6DF02 /* Geohash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B668DE22126623B00C6DF02 /* Geohash.framework */; };
-		5B668DFD2126629900C6DF02 /* GeohashBits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B668DF92126629900C6DF02 /* GeohashBits.swift */; };
+		5B668DFD2126629900C6DF02 /* Geohash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B668DF92126629900C6DF02 /* Geohash.swift */; };
 		5B668DFE2126629900C6DF02 /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B668DFA2126629900C6DF02 /* BoundingBox.swift */; };
 		5B668DFF2126629900C6DF02 /* GeohashIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B668DFB2126629900C6DF02 /* GeohashIterator.swift */; };
 		5B668E002126629900C6DF02 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B668DFC2126629900C6DF02 /* Location.swift */; };
-		5B668E06212662C500C6DF02 /* GeohashBitsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B668E02212662C500C6DF02 /* GeohashBitsTests.swift */; };
+		5B668E06212662C500C6DF02 /* GeohashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B668E02212662C500C6DF02 /* GeohashTests.swift */; };
 		5B668E07212662C500C6DF02 /* GeohashIteratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B668E03212662C500C6DF02 /* GeohashIteratorTests.swift */; };
 		5B668E08212662C500C6DF02 /* BoundingBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B668E04212662C500C6DF02 /* BoundingBoxTests.swift */; };
 		5B668E09212662C500C6DF02 /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B668E05212662C500C6DF02 /* LocationTests.swift */; };
+		5B668E1F2127026F00C6DF02 /* SampleLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B668E1E2127026F00C6DF02 /* SampleLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,14 +34,15 @@
 		5B593F322124CA9A00D8E353 /* framework_info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = framework_info.plist; sourceTree = "<group>"; };
 		5B668DE22126623B00C6DF02 /* Geohash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Geohash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B668DEA2126623B00C6DF02 /* GeohashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeohashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B668DF92126629900C6DF02 /* GeohashBits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeohashBits.swift; path = Sources/Geohash/GeohashBits.swift; sourceTree = "<group>"; };
+		5B668DF92126629900C6DF02 /* Geohash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Geohash.swift; path = Sources/Geohash/Geohash.swift; sourceTree = "<group>"; };
 		5B668DFA2126629900C6DF02 /* BoundingBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoundingBox.swift; path = Sources/Geohash/BoundingBox.swift; sourceTree = "<group>"; };
 		5B668DFB2126629900C6DF02 /* GeohashIterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeohashIterator.swift; path = Sources/Geohash/GeohashIterator.swift; sourceTree = "<group>"; };
 		5B668DFC2126629900C6DF02 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Sources/Geohash/Location.swift; sourceTree = "<group>"; };
-		5B668E02212662C500C6DF02 /* GeohashBitsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeohashBitsTests.swift; path = Tests/GeohashTests/GeohashBitsTests.swift; sourceTree = "<group>"; };
+		5B668E02212662C500C6DF02 /* GeohashTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeohashTests.swift; path = Tests/GeohashTests/GeohashTests.swift; sourceTree = "<group>"; };
 		5B668E03212662C500C6DF02 /* GeohashIteratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeohashIteratorTests.swift; path = Tests/GeohashTests/GeohashIteratorTests.swift; sourceTree = "<group>"; };
 		5B668E04212662C500C6DF02 /* BoundingBoxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoundingBoxTests.swift; path = Tests/GeohashTests/BoundingBoxTests.swift; sourceTree = "<group>"; };
 		5B668E05212662C500C6DF02 /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationTests.swift; path = Tests/GeohashTests/LocationTests.swift; sourceTree = "<group>"; };
+		5B668E1E2127026F00C6DF02 /* SampleLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SampleLocation.swift; path = Tests/GeohashTests/SampleLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,10 +76,11 @@
 		OBJ_14 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				5B668E02212662C500C6DF02 /* GeohashTests.swift */,
 				5B668E04212662C500C6DF02 /* BoundingBoxTests.swift */,
-				5B668E02212662C500C6DF02 /* GeohashBitsTests.swift */,
 				5B668E03212662C500C6DF02 /* GeohashIteratorTests.swift */,
 				5B668E05212662C500C6DF02 /* LocationTests.swift */,
+				5B668E1E2127026F00C6DF02 /* SampleLocation.swift */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
@@ -104,8 +107,8 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				5B668DF92126629900C6DF02 /* Geohash.swift */,
 				5B668DFA2126629900C6DF02 /* BoundingBox.swift */,
-				5B668DF92126629900C6DF02 /* GeohashBits.swift */,
 				5B668DFB2126629900C6DF02 /* GeohashIterator.swift */,
 				5B668DFC2126629900C6DF02 /* Location.swift */,
 			);
@@ -222,7 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B668DFD2126629900C6DF02 /* GeohashBits.swift in Sources */,
+				5B668DFD2126629900C6DF02 /* Geohash.swift in Sources */,
 				5B668DFE2126629900C6DF02 /* BoundingBox.swift in Sources */,
 				5B668E002126629900C6DF02 /* Location.swift in Sources */,
 				5B668DFF2126629900C6DF02 /* GeohashIterator.swift in Sources */,
@@ -233,7 +236,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B668E06212662C500C6DF02 /* GeohashBitsTests.swift in Sources */,
+				5B668E06212662C500C6DF02 /* GeohashTests.swift in Sources */,
+				5B668E1F2127026F00C6DF02 /* SampleLocation.swift in Sources */,
 				5B668E08212662C500C6DF02 /* BoundingBoxTests.swift in Sources */,
 				5B668E09212662C500C6DF02 /* LocationTests.swift in Sources */,
 				5B668E07212662C500C6DF02 /* GeohashIteratorTests.swift in Sources */,

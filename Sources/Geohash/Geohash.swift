@@ -2,7 +2,7 @@
 
 import Foundation
 
-public struct GeohashBits {
+public struct Geohash<L: Location> {
     
     public enum Error: Swift.Error {
         case invalidPrecision
@@ -82,7 +82,7 @@ public struct GeohashBits {
         return hash
     }
     
-    public func boundingBox() -> BoundingBox {
+    public func boundingBox() -> BoundingBox<L> {
         var (latBits, lonBits) = deinterleave(bits)
         var latPrecision = precision
         
@@ -91,12 +91,12 @@ public struct GeohashBits {
             latPrecision -= 1
         }
 
-        let minLocation = Location(longitude: unscaledBits(lonBits, range: longitudeRange, precision: precision),
+        let minLocation = L(longitude: unscaledBits(lonBits, range: longitudeRange, precision: precision),
                                    latitude: unscaledBits(latBits, range: latitudeRange, precision: latPrecision))
-        let maxLocation = Location(longitude: unscaledBits(lonBits + 1, range: longitudeRange, precision: precision),
+        let maxLocation = L(longitude: unscaledBits(lonBits + 1, range: longitudeRange, precision: precision),
                                    latitude: unscaledBits(latBits + 1, range: latitudeRange, precision: latPrecision))
         do {
-            return try BoundingBox(min: minLocation, max: maxLocation)
+            return try BoundingBox<L>(min: minLocation, max: maxLocation)
         } catch {
             preconditionFailure("Unable to create bounding box: \(error)")
         }
@@ -109,7 +109,7 @@ public struct GeohashBits {
         case north
     }
     
-    public func neighbor(_ neighbor: Neighbor) -> GeohashBits {
+    public func neighbor(_ neighbor: Neighbor) -> Geohash {
         switch neighbor {
         case .north:
             return incremented(set: .evens, direction: +1)
@@ -145,7 +145,7 @@ public struct GeohashBits {
         }
     }
     
-    func incremented(set: InterleaveSet, direction: Int) -> GeohashBits {
+    func incremented(set: InterleaveSet, direction: Int) -> Geohash {
         if direction == 0 {
             return self
         }
@@ -174,7 +174,7 @@ public struct GeohashBits {
         modifyBits &= set.modifyMask() >> (UInt64(64) - UInt64(precision) * 2)
 
         do {
-            return try GeohashBits(bits: modifyBits | keepBits, precision: precision, fromString: fromString)
+            return try Geohash(bits: modifyBits | keepBits, precision: precision, fromString: fromString)
         } catch {
             preconditionFailure("Failed to create Geohash with error: \(error)")
         }
