@@ -1,6 +1,6 @@
 import XCTest
 
-@testable import Geohash
+@testable import Geohasher
 
 class GeohashIteratorTests: XCTestCase {
     

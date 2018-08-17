@@ -1,5 +1,5 @@
 import XCTest
-@testable import Geohash
+@testable import Geohasher
 
 class BoundingBoxTests: XCTestCase {
     
