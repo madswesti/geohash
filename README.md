@@ -1,5 +1,4 @@
 # Geohash
-[![Build Status](https://travis-ci.org/michael-groble/Geohash.svg?branch=master)](https://travis-ci.org/michael-groble/Geohash)
 
 Native Swift geohash package supporting binary and character encoding
 
@@ -25,23 +24,26 @@ GeohashBits(hash: "u10hfr2").boundingBox().center()
 => (longitude: 0.0995635986328125, latitude: 51.5004730224609)
 ```
 
-This is the same answer you will get from PostGIS 
-
-```sql
-select ST_AsText(ST_PointFromGeoHash('u10hfr2'));
-st_astext                  
---------------------------------------------
-POINT(0.0995635986328125 51.5004730224609)
-```
-
-The library also supports computing neighbors
+The library also supports computing neighbors:
 
 ```swift
 GeohashBits(hash: "u10hfr2c4pv").neighbor(.north).hash()
 => "u10hfr2c60j"
 ```
 
+## Testing
+
+### macOS
+Run `GeocodeTests` target via the `Geocode` scheme in `XCode`.
+
+### Linux
+Run the vagrant file and execute `swift test`
+
 ## Acknowledgements
+
+Forked from [michael-groble/Geohash](https://github.com/michael-groble/Geohash):
+* [Original BSD-3 License](./original_license.md) 
+
 Based on the [Redis implementation](https://github.com/antirez/redis/blob/unstable/src/geohash.c), 
 * Copyright (c) 2013-2014, yinqiwen <yinqiwen@gmail.com>
 * Copyright (c) 2014, Matt Stancliff <matt@genges.com>
