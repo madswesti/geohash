@@ -1,4 +1,4 @@
-# Geohash [![Build Status](https://travis-ci.com/rcedwards/geohash.svg?branch=master)](https://travis-ci.com/rcedwards/geohash)
+# Geohasher [![Build Status](https://travis-ci.com/rcedwards/geohash.svg?branch=master)](https://travis-ci.com/rcedwards/geohash)
 
 Native Swift Geohash framework/package supporting binary and character encoding.
 

@@ -37,10 +37,23 @@ class GeohashIteratorTests: XCTestCase {
             XCTAssertEqual($0.hash().count, 3)
         }
     }
+
+    func testBoundingBoxHashCollection() throws {
+        let min = SampleLocation(longitude: -85.58501, latitude: 31.07828)
+        let max = SampleLocation(longitude: -78.98223, latitude: 37.811469)
+        let bounds = try BoundingBox<SampleLocation>(min: min, max: max)
+        let iterator = try GeohashIterator(bounds: bounds, characterPrecision: 3)
+
+        var hashSet = Set<String>()
+        iterator.forEach { hashSet.insert($0.hash()) }
+        XCTAssertEqual(hashSet.count, 25)
+    }
 }
 
 extension GeohashIteratorTests {
     static var allTests = [
-        ("testIterateLevel8", testIterateLevel8)
+        ("testIterateLevel8", testIterateLevel8),
+        ("testIterateCharacterPercision", testIterateCharacterPercision),
+        ("testBoundingBoxHashCollection", testBoundingBoxHashCollection)
     ]
 }
