@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5B668DE12126623B00C6DF02"
                BuildableName = "Geohasher.framework"
-               BlueprintName = "Geohash"
-               ReferencedContainer = "container:Geohash.xcodeproj">
+               BlueprintName = "Geohasher"
+               ReferencedContainer = "container:Geohasher.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5B668DE92126623B00C6DF02"
                BuildableName = "GeohasherTests.xctest"
-               BlueprintName = "GeohashTests"
-               ReferencedContainer = "container:Geohash.xcodeproj">
+               BlueprintName = "GeohasherTests"
+               ReferencedContainer = "container:Geohasher.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5B668DE12126623B00C6DF02"
             BuildableName = "Geohasher.framework"
-            BlueprintName = "Geohash"
-            ReferencedContainer = "container:Geohash.xcodeproj">
+            BlueprintName = "Geohasher"
+            ReferencedContainer = "container:Geohasher.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,8 +66,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5B668DE12126623B00C6DF02"
             BuildableName = "Geohasher.framework"
-            BlueprintName = "Geohash"
-            ReferencedContainer = "container:Geohash.xcodeproj">
+            BlueprintName = "Geohasher"
+            ReferencedContainer = "container:Geohasher.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -84,8 +84,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5B668DE12126623B00C6DF02"
             BuildableName = "Geohasher.framework"
-            BlueprintName = "Geohash"
-            ReferencedContainer = "container:Geohash.xcodeproj">
+            BlueprintName = "Geohasher"
+            ReferencedContainer = "container:Geohasher.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

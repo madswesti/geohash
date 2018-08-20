@@ -43,6 +43,7 @@
 		5B668E04212662C500C6DF02 /* BoundingBoxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoundingBoxTests.swift; path = Tests/GeohasherTests/BoundingBoxTests.swift; sourceTree = "<group>"; };
 		5B668E05212662C500C6DF02 /* LocationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationTests.swift; path = Tests/GeohasherTests/LocationTests.swift; sourceTree = "<group>"; };
 		5B668E1E2127026F00C6DF02 /* SampleLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SampleLocation.swift; path = Tests/GeohasherTests/SampleLocation.swift; sourceTree = "<group>"; };
+		5BACF598212B6EBF00D6FBD4 /* Geohasher.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Geohasher.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +68,7 @@
 		5B593EF82124C9D800D8E353 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5BACF598212B6EBF00D6FBD4 /* Geohasher.playground */,
 				5B593F322124CA9A00D8E353 /* framework_info.plist */,
 				5B593F312124CA9A00D8E353 /* tests_info.plist */,
 			);
@@ -128,9 +130,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5B668DE12126623B00C6DF02 /* Geohash */ = {
+		5B668DE12126623B00C6DF02 /* Geohasher */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B668DF32126623C00C6DF02 /* Build configuration list for PBXNativeTarget "Geohash" */;
+			buildConfigurationList = 5B668DF32126623C00C6DF02 /* Build configuration list for PBXNativeTarget "Geohasher" */;
 			buildPhases = (
 				5B668DDD2126623B00C6DF02 /* Sources */,
 				5B668DDE2126623B00C6DF02 /* Frameworks */,
@@ -141,14 +143,14 @@
 			);
 			dependencies = (
 			);
-			name = Geohash;
+			name = Geohasher;
 			productName = Geohash;
 			productReference = 5B668DE22126623B00C6DF02 /* Geohasher.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5B668DE92126623B00C6DF02 /* GeohashTests */ = {
+		5B668DE92126623B00C6DF02 /* GeohasherTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B668DF62126623C00C6DF02 /* Build configuration list for PBXNativeTarget "GeohashTests" */;
+			buildConfigurationList = 5B668DF62126623C00C6DF02 /* Build configuration list for PBXNativeTarget "GeohasherTests" */;
 			buildPhases = (
 				5B668DE62126623B00C6DF02 /* Sources */,
 				5B668DE72126623B00C6DF02 /* Frameworks */,
@@ -159,7 +161,7 @@
 			dependencies = (
 				5B668DED2126623C00C6DF02 /* PBXTargetDependency */,
 			);
-			name = GeohashTests;
+			name = GeohasherTests;
 			productName = GeohashTests;
 			productReference = 5B668DEA2126623B00C6DF02 /* GeohasherTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -185,7 +187,7 @@
 					};
 				};
 			};
-			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Geohash" */;
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Geohasher" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -197,8 +199,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5B668DE12126623B00C6DF02 /* Geohash */,
-				5B668DE92126623B00C6DF02 /* GeohashTests */,
+				5B668DE12126623B00C6DF02 /* Geohasher */,
+				5B668DE92126623B00C6DF02 /* GeohasherTests */,
 			);
 		};
 /* End PBXProject section */
@@ -249,7 +251,7 @@
 /* Begin PBXTargetDependency section */
 		5B668DED2126623C00C6DF02 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5B668DE12126623B00C6DF02 /* Geohash */;
+			target = 5B668DE12126623B00C6DF02 /* Geohasher */;
 			targetProxy = 5B668DEC2126623C00C6DF02 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -314,7 +316,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = me.panko.geohasher;
-				PRODUCT_NAME = Geohasher;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -381,7 +382,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = me.panko.geohasher;
-				PRODUCT_NAME = Geohasher;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -446,7 +446,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = me.panko.geohashertests;
-				PRODUCT_NAME = GeohasherTests;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -506,7 +505,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = me.panko.geohashertests;
-				PRODUCT_NAME = GeohasherTests;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
@@ -560,7 +558,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5B668DF32126623C00C6DF02 /* Build configuration list for PBXNativeTarget "Geohash" */ = {
+		5B668DF32126623C00C6DF02 /* Build configuration list for PBXNativeTarget "Geohasher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B668DF42126623C00C6DF02 /* Debug */,
@@ -569,7 +567,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B668DF62126623C00C6DF02 /* Build configuration list for PBXNativeTarget "GeohashTests" */ = {
+		5B668DF62126623C00C6DF02 /* Build configuration list for PBXNativeTarget "GeohasherTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B668DF72126623C00C6DF02 /* Debug */,
@@ -578,7 +576,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_2 /* Build configuration list for PBXProject "Geohash" */ = {
+		OBJ_2 /* Build configuration list for PBXProject "Geohasher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_3 /* Debug */,
