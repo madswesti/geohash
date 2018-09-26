@@ -1,5 +1,5 @@
 import XCTest
-@testable import GeohashTests
+@testable import GeohasherTests
 
 XCTMain([
   testCase(BoundingBoxTests.allTests),
