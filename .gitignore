@@ -11,3 +11,6 @@
 # Vagrant
 .vagrant
 /*.log
+
+# Carthage
+/Carthage
