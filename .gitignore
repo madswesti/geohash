@@ -2,8 +2,12 @@
 **/xcuserdata
 *.xccheckout
 
-# OS X
+# macOS
 .DS_Store
 
 # Swift Package Manager
 /.build
+
+# Vagrant
+.vagrant
+/*.log
