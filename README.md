@@ -1,4 +1,14 @@
-# Geohasher [![Build Status](https://travis-ci.com/rcedwards/geohash.svg?branch=master)](https://travis-ci.com/rcedwards/geohash)
+# Geohasher 
+[![Build Status][TravisBadge]][TravisLink]
+[![Swift Version][SwiftBadge]][SwiftLink] 
+[![XcodeBadge]][XcodeLink]
+
+[TravisBadge]: https://travis-ci.com/rcedwards/geohash.svg?branch=master
+[TravisLink]: https://travis-ci.com/rcedwards/geohash
+[XcodeBadge]: https://img.shields.io/badge/Xcode-10.2-gray.svg?style=flat&logo=xcode&logoColor=white&labelColor=1575F9
+[XcodeLink]: https://developer.apple.com/xcode/
+[SwiftBadge]: https://img.shields.io/badge/Swift-5.0-gray.svg?style=flat&logo=swift&logoColor=white&labelColor=FA7343
+[SwiftLink]: https://developer.apple.com/swift/
 
 Native Swift Geohash framework/package supporting binary and character encoding.
 
