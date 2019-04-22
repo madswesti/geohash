@@ -1,5 +1,5 @@
-SWIFT_URL = 'https://swift.org/builds/swift-4.2-release/ubuntu1604/swift-4.2-RELEASE/swift-4.2-RELEASE-ubuntu16.04.tar.gz'.freeze
-SWIFT_PATH = 'swift-4.2-RELEASE-ubuntu16.04'.freeze
+SWIFT_URL = 'https://swift.org/builds/swift-5.0-release/ubuntu1604/swift-5.0-RELEASE/swift-5.0-RELEASE-ubuntu16.04.tar.gz'.freeze
+SWIFT_PATH = SWIFT_URL.split('/')[-1].split('.')[0..2].join('.').freeze
 ARCHIVE = 'swift.tar.gz'.freeze
 USER_NAME = 'vagrant'.freeze
 SWIFT_HOME = "/home/#{USER_NAME}/#{SWIFT_PATH}".freeze
