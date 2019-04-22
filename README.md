@@ -76,7 +76,19 @@ iterator.forEach {
 Run `GeocodeTests` target via the `Geocode` scheme in `Xcode`.
 
 ### Linux
-Run the vagrant file and execute `swift test`
+
+#### Create Machine
+`vagrant up`
+
+#### SSH into Machine
+`vagrant ssh`
+
+#### Clone Project and CD to Working Dir
+`git clone https://github.com/rcedwards/geohash.git`
+`cd geohash`
+
+#### Run Tests
+`swift test`
 
 ## Acknowledgements
 
